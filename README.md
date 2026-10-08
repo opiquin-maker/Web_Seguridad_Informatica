@@ -18,7 +18,7 @@
 
 ## 📰 ¿Qué es este tablón?
 
-Este es un **tablón de anuncios especializado en seguridad informática**, un espacio donde se publican y se mantienen actualizadas las **noticias más relevantes del sector de la ciberseguridad**. Diseñado para profesionales, estudiantes y entusiastas de la seguridad digital que buscan estar informados sobre:
+Este es un **tablón de anuncios especializado en seguridad informática**, un espacio donde se publican y se mantienen actualizadas las **noticias más relevantes del sector de la ciberseguridad**, con un enfoque educativo y práctico para mantenerse informado sobre riesgos, amenazas y mejores prácticas.
 
 - 🔴 **Nuevas vulnerabilidades** descubiertas
 - 📢 **Alertas de seguridad** importantes
@@ -31,7 +31,7 @@ Este es un **tablón de anuncios especializado en seguridad informática**, un e
 
 ## 🎯 Objetivo
 
-Crear una **plataforma accesible y actualizada** que recopile y centralice las noticias más importantes de seguridad informática, permitiendo que los usuarios se mantengan informados sobre los últimos eventos, vulnerabilidades y recomendaciones de protección en el sector.
+Crear una **plataforma accesible y actualizada** que recopile y centralice las noticias más importantes de seguridad informática, permitiendo que los usuarios se mantengan informados sobre los últimos eventos del ámbito digital y se conciencien sobre la importancia de la seguridad.
 
 ---
 
@@ -42,7 +42,8 @@ Crear una **plataforma accesible y actualizada** que recopile y centralice las n
 ✅ **Fácil Acceso** - Interfaz clara e intuitiva  
 ✅ **Diseño Responsivo** - Compatible con todos los dispositivos  
 ✅ **Búsqueda y Filtros** - Encuentra noticias fácilmente  
-✅ **Educativo** - Análisis y explicaciones de las amenazas
+✅ **Educativo** - Análisis y explicaciones de las amenazas  
+✅ **Desarrollo con Python** - He usado Python para la lógica o backend del proyecto
 
 ---
 
@@ -53,12 +54,13 @@ Crear una **plataforma accesible y actualizada** que recopile y centralice las n
 | **HTML** | Estructura del tablón |
 | **CSS** | Diseño y estilos responsivos |
 | **JavaScript** | Interactividad y funcionalidades |
+| **Python** | Lógica, automatización o backend del proyecto |
 
 ---
 
 ## ⚠️ Importante
 
-> ℹ️ **Carácter Educativo**: Este tablón está diseñado con propósitos **educativos y de sensibilización** en materia de seguridad informática. La información se proporciona para aumentar la conciencia sobre las amenazas y promover mejores prácticas de protección.
+> ℹ️ **Carácter Educativo**: Este tablón está diseñado con propósitos **educativos y de sensibilización** en materia de seguridad informática. La información se proporciona para aumentar la conciencia y fomentar buenas prácticas de seguridad.
 
 ---
 
