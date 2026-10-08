@@ -39,7 +39,7 @@ Crear una **plataforma accesible y actualizada** que recopile y centralice las n
 
 ✅ **Actualizaciones Frecuentes** - Nuevas noticias regularmente  
 ✅ **Información Relevante** - Contenido filtrado y verificado  
-✅ **Fácil Acceso** - Interfaz clara y intuitiva  
+✅ **Fácil Acceso** - Interfaz clara e intuitiva  
 ✅ **Diseño Responsivo** - Compatible con todos los dispositivos  
 ✅ **Búsqueda y Filtros** - Encuentra noticias fácilmente  
 ✅ **Educativo** - Análisis y explicaciones de las amenazas
@@ -50,33 +50,9 @@ Crear una **plataforma accesible y actualizada** que recopile y centralice las n
 
 | Tecnología | Uso |
 |-----------|-----|
-| **HTML5** | Estructura del tablón |
-| **CSS3** | Diseño y estilos responsivos |
+| **HTML** | Estructura del tablón |
+| **CSS** | Diseño y estilos responsivos |
 | **JavaScript** | Interactividad y funcionalidades |
-
----
-
-## 🚀 Cómo Acceder al Tablón
-
-### Opción 1: Clonar y usar localmente
-```bash
-git clone https://github.com/opiquin-maker/Web_Seguridad_Informatica.git
-cd Web_Seguridad_Informatica
-open index.html  # o abre el archivo en tu navegador
-```
-
-### Opción 2: Acceso en línea
-Visita el sitio web deployado para ver las noticias en tiempo real.
-
----
-
-## 📖 Cómo Usar el Tablón
-
-1. **Explora las noticias** - Navega por las últimas publicaciones
-2. **Filtra por categoría** - Busca por tipo de amenaza o sector
-3. **Lee análisis detallados** - Comprende el contexto de cada noticia
-4. **Accede a recursos** - Obtén herramientas y guías de protección
-5. **Comparte información** - Difunde las noticias importantes
 
 ---
 
@@ -93,12 +69,6 @@ Si deseas sugerir noticias, reportar errores o contribuir con contenido de segur
 - 🐛 **Reporta problemas** mediante [Issues](https://github.com/opiquin-maker/Web_Seguridad_Informatica/issues)
 - 💬 **Sugiere mejoras** o nuevas noticias
 - ⭐ **Marca como favorito** si te resulta útil
-
----
-
-## 📄 Licencia
-
-Este proyecto está disponible bajo la licencia **MIT**. Siéntete libre de usar, modificar y distribuir este contenido.
 
 ---
 
