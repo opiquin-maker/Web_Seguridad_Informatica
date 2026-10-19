@@ -27,8 +27,10 @@ if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
 // Global search: useful from every page, with direct links to articles and learning sections.
 const searchIndex = [
  {title:'KillSec: Europol toma el control de su sitio de filtraciones',desc:'Ransomware, robo de datos y operación internacional',href:'articulo-amenazas.html',img:'assets/europol-killsec.png',tag:'EUROPOL · 1 OCT 2026',keys:'killsec ransomware europol extorsión filtración robo datos amenazas'},
- {title:'ENISA 2026: las dependencias digitales amplían el riesgo',desc:'Panorama europeo de amenazas, ransomware y cadena de suministro',href:'articulo-nube.html',img:'assets/news-enisa-2026.jpg',tag:'ENISA · 22 SEP 2026',keys:'enisa europa nube cloud dependencias ransomware cadena suministro'},
- {title:'Contenidos de seguridad y alta disponibilidad',desc:'Conceptos, riesgos y medidas técnicas',href:'contenidos.html',img:'assets/news-cloud-detail.jpg',tag:'CONTENIDOS',keys:'contenidos redes seguridad alta disponibilidad riesgos'},
+ {title:'Endesa avisa de una brecha con DNI e IBAN de clientes expuestos',desc:'Acceso no autorizado a una plataforma comercial en España',href:'articulo-endesa.html',img:'assets/news-critical.jpg',tag:'ENDESA · 13 ENE 2026',keys:'endesa brecha datos clientes dni iban naturgy filtración fuerza bruta españa phishing rgpd aepd'},
+ {title:'Operación Eastwood: la botnet de NoName057(16) y los 42 servidores en España',desc:'Ataques DDoS, botnet y detención en Zaragoza',href:'articulo-eastwood.html',img:'assets/news-ai.jpg',tag:'EUROPOL · 16 JUL 2025',keys:'eastwood noname057 botnet ddos ddosia koobface zaragoza policía nacional españa disponibilidad'},
+ {title:'Natohub: detenido en Calpe un hacker de 18 años',desc:'Ataques a organismos públicos y venta de datos en la dark web',href:'articulo-natohub.html',img:'assets/news-europol.jpg',tag:'POLICÍA NACIONAL · FEB 2025',keys:'natohub calpe hacker detenido otan fnmt sepe dgt guardia civil dark web fuerza bruta españa'},
+ {title:'Contenidos de seguridad y alta disponibilidad',desc:'Conceptos, riesgos y medidas técnicas',href:'contenidos.html',img:'assets/news-cloud-detail.jpg',tag:'CONTENIDOS',keys:'contenidos redes seguridad alta disponibilidad riesgos glosario koobface botnet fuerza bruta amenazas'},
  {title:'Reflexión personal del proyecto',desc:'Qué he aprendido y cómo aplicaría las medidas',href:'reflexion.html',img:'assets/hero-cyber.jpg',tag:'REFLEXIÓN',keys:'reflexion personal aprendizaje opinión proyecto'},
  {title:'Defensa: medidas y reto interactivo',desc:'Contraseñas, phishing, MFA y prevención',href:'defensa.html',img:'assets/challenge-phishing.jpg',tag:'DEFENSA',keys:'defensa phishing contraseña mfa autenticación protección'}
 ];
@@ -134,6 +136,27 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&searchLayer?.classL
    example:'Te llega un correo que dice que tu cuenta se bloqueará en diez minutos y te lleva a una página casi idéntica a la del banco. Si escribes la contraseña allí, se la estás entregando al atacante.',
    protect:'No te dejes llevar por la urgencia. Comprueba la dirección del remitente, no uses el enlace del mensaje y entra por la web o aplicación oficial. Nunca compartas códigos de verificación.'
   },
+  botnet:{
+   label:'04 // BOTNET',
+   title:'Un ejército de equipos infectados',
+   intro:'Una botnet es una red de dispositivos infectados (ordenadores, móviles, routers, cámaras IP) que un atacante controla a distancia sin que sus dueños lo sepan. Cada equipo infectado se llama bot.',
+   example:'En la Operación Eastwood cayeron más de 100 servidores del grupo NoName057(16), 42 de ellos en España. Se usaban para coordinar ataques DDoS contra webs de organismos públicos.',
+   protect:'Cambia las contraseñas por defecto de routers y dispositivos IoT, actualiza el firmware y el sistema, y vigila el tráfico saliente anómalo. Un equipo lento o con mucho tráfico sin motivo puede estar infectado.'
+  },
+  'fuerza-bruta':{
+   label:'05 // ATAQUE DE FUERZA BRUTA',
+   title:'Probar claves hasta que una funciona',
+   intro:'Un ataque de fuerza bruta consiste en probar contraseñas de forma automática, por diccionario o por combinaciones, hasta acertar. Cuanto más corta y más común es la clave, antes cae.',
+   example:'Un servidor con SSH abierto a Internet recibe intentos de login desde todo el mundo a todas horas. Si alguna cuenta tiene una clave débil como 123456, el atacante entra.',
+   protect:'Usa claves largas y únicas, activa el doble factor, limita los intentos fallidos con herramientas como fail2ban, evita exponer SSH o RDP sin necesidad y revisa los registros de acceso.'
+  },
+  koobface:{
+   label:'06 // KOOBFACE',
+   title:'El gusano que viajaba por las redes sociales',
+   intro:'Koobface fue un gusano que apareció en 2008 y se propagaba por redes sociales. Su nombre es casi un anagrama de Facebook. Infectaba los equipos y los convertía en parte de una botnet.',
+   example:'Recibías un mensaje de un amigo con un enlace a un vídeo. Al abrirlo te pedían instalar un reproductor para verlo y, al aceptar, tu equipo quedaba infectado y empezaba a mandar el mismo mensaje a tus contactos.',
+   protect:'No instales programas ni códecs desde enlaces de mensajes, aunque los envíe un conocido. Si algo te parece raro, pregunta al contacto por otro canal y mantén el sistema y el antivirus actualizados.'
+  },
   'supply-chain':{
    label:'03 // CADENA DE SUMINISTRO',
    title:'Entrar por la puerta de un proveedor',
@@ -222,7 +245,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&searchLayer?.classL
  const pagePose={
   'index.html':0,'noticias.html':1,'contenidos.html':2,'reflexion.html':3,
   'organizacion.html':1,'fuentes.html':2,'defensa.html':3,
-  'articulo-amenazas.html':2,'articulo-copias.html':3,'articulo-nube.html':1,
+  'articulo-amenazas.html':2,'articulo-copias.html':3,'articulo-endesa.html':1,'articulo-eastwood.html':2,'articulo-natohub.html':3,
   'articulo-ia.html':0,'articulo-disponibilidad.html':2
  };
  const fileName=(window.location.pathname.split('/').pop()||'index.html').toLowerCase();
